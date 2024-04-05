@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div#contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+div#contenido>header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+div#contenido>main{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+
+div#contenido>main img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*Menu desplegable*/
+label>input#hamburguer-icon {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+label>span.hamburguer-line {
+    position: absolute;
+    top: 1.75rem;
+    left: 0.5rem;
+    width: 1.5rem;
+    height: 0.25rem;
+    background: black;
+    transition: background 0s .25s;
+}
+
+label>span.hamburguer-line:nth-child(2) {
+    top: 1.3rem;
+    transition: top .25s ease .25s, transform .25s ease 0s;
+    /*para la vuelta*/
+}
+
+label>span.hamburguer-line:nth-child(4) {
+    top: 2.2rem;
+    transition: top .25s ease .25s, transform .25s ease 0s;
+    /*para la vuelta*/
+}
+
+input#hamburguer-icon:checked~span.hamburguer-line:nth-child(2) {
+    top: 1.75rem;
+    /*primero se desplaza hacia el centro*/
+    transform: rotate(45deg);
+    /*después rota 45º*/
+    transition-delay: 0s, .25s;
+    /*primero se desplazan y luego giran*/
+}
+
+input#hamburguer-icon:checked~span.hamburguer-line:nth-child(4) {
+    top: 1.75rem;
+    /*primero se desplaza hacia el centro*/
+    transform: rotate(-45deg);
+    /*después rota 45º*/
+    transition-delay: 0s, .25s;
+    /*primero se desplazan y luego giran*/
+}
+
+input#hamburguer-icon:checked~span.hamburguer-line:nth-child(3) {
+    background: none;
+    /*La línea central pierde el color de fondo*/
+}
