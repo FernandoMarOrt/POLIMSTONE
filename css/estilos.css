@@ -17,19 +17,6 @@ div#contenido>header{
     padding: 1rem;
 }
 
-div#contenido>main{
-    display: flex;
-    flex-direction: column;
-    padding: 1.2rem;
-}
-
-
-div#contenido>main img{
-    width: 100%;
-    height: auto;
-}
-
-
 /*Menu desplegable*/
 label>input#hamburguer-icon {
     display: none;
@@ -89,3 +76,33 @@ input#hamburguer-icon:checked~span.hamburguer-line:nth-child(3) {
     background: none;
     /*La línea central pierde el color de fondo*/
 }
+
+div#contenido>main{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+
+div#contenido>main img{
+    width: 100%;
+    height: auto;
+}
+
+div#contenido>main .titulo{
+    text-align: center;
+    padding: 1rem;
+    color: #085A8C;
+}
+
+div#contenido>main>div#ventajas{
+    text-align: center;
+}
+
+/*COLORES:
+
+MORADO: #A656A0
+AZUL: #085A8C
+VERDE1: #89A61F
+VERDE2: #92A649
+*/
