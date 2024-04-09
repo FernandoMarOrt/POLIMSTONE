@@ -80,7 +80,7 @@ input#hamburguer-icon:checked~span.hamburguer-line:nth-child(3) {
 div#contenido>main{
     display: flex;
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1.2rem 2rem;
 }
 
 
@@ -95,9 +95,86 @@ div#contenido>main .titulo{
     color: #085A8C;
 }
 
+div#contenido>main .texto{
+    text-align: justify;
+}
+
 div#contenido>main>div#ventajas{
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
+
+div#contenido>main>div#ventajas>p{
+    padding: 0.5rem;
+}
+
+div#contenido>main>div#productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+}
+
+div#contenido>main>div#productos>div.item-producto{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+div#contenido>main>div#productos>div.item-producto>h3.tituloProducto{
+    font-size: 17px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+div#contenido>main>div#productos>button#masproductos{
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #A656A0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+div#contenido>main>div#nosotros{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 1rem 0rem;
+}
+
+div#contenido>main>div#nosotros>*{
+    padding: 1rem 0rem;
+}
+
+div#contenido>main>div#contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+div#contenido>footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+div#contenido>footer>*{
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+div#contenido>footer>p#firma>a{
+    color: #085A8C;
+    text-decoration: none;
+}
+
 
 /*COLORES:
 
