@@ -15,6 +15,7 @@ div#contenido>header{
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    border: 1px solid red;
 }
 
 /*Menu desplegable*/
@@ -76,6 +77,39 @@ input#hamburguer-icon:checked~span.hamburguer-line:nth-child(3) {
     background: none;
     /*La línea central pierde el color de fondo*/
 }
+
+/* Estilo para ocultar la casilla de verificación */
+#toggle {
+    display: none;
+}
+
+/* Estilo para el menú desplegable */
+div#menu-desplegable ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para mostrar el menú cuando la casilla está marcada */
+#toggle:checked ~ label > ul {
+    display: block;
+}
+
+
+div#contenido>div#menu-desplegable{
+    color: #085A8C;
+    font-weight: bold;
+    display: none;
+    padding: 1rem 1.5rem;
+}
+div#contenido>div#menu-desplegable>ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
 
 div#contenido>main{
     display: flex;

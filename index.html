@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POLIMSTONE</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.animate-colors-min.js"></script>
+    <script src="./js/scripts.js"></script>
 </head>
 
 <body>
     <div id="contenido">
         <header>
             <nav id="menu-principal">
-                <label for="hamburguer-icon">
+                <label id="clickmenu" for="hamburguer-icon">
                     <input id="hamburguer-icon" type="checkbox">
                     <span class="hamburguer-line"></span>
                     <span class="hamburguer-line"></span>
@@ -21,6 +24,17 @@
             </nav>
             <img src="./img/logo-polimstone.webp" alt="logo" width="100">
         </header>
+        <div id="menu-desplegable">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+                <ul>
+                    <li>INICIO</li>
+                    <li>NOSOTROS</li>
+                    <li>PRODUCTOS</li>
+                    <li>CONTACTO</li>
+                </ul>
+            </label>
+        </div>
         <main>
             <div id="descripcion">
                 <h1 class="titulo">Polimstone</h1>
