@@ -4,165 +4,108 @@
     padding: 0;
 }
 
-div#contenido{
+div#contenido {
     display: flex;
     flex-direction: column;
 }
 
-div#contenido>header{
+div#contenido>header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid red;
 }
+
+div#contenido>header>img#menuclick {
+    cursor: pointer;
+}
+
 
 /*Menu desplegable*/
-label>input#hamburguer-icon {
-    display: none;
-}
-
-label {
-    display: inline-block;
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-    background-color: white;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-}
-
-label>span.hamburguer-line {
-    position: absolute;
-    top: 1.75rem;
-    left: 0.5rem;
-    width: 1.5rem;
-    height: 0.25rem;
-    background: black;
-    transition: background 0s .25s;
-}
-
-label>span.hamburguer-line:nth-child(2) {
-    top: 1.3rem;
-    transition: top .25s ease .25s, transform .25s ease 0s;
-    /*para la vuelta*/
-}
-
-label>span.hamburguer-line:nth-child(4) {
-    top: 2.2rem;
-    transition: top .25s ease .25s, transform .25s ease 0s;
-    /*para la vuelta*/
-}
-
-input#hamburguer-icon:checked~span.hamburguer-line:nth-child(2) {
-    top: 1.75rem;
-    /*primero se desplaza hacia el centro*/
-    transform: rotate(45deg);
-    /*después rota 45º*/
-    transition-delay: 0s, .25s;
-    /*primero se desplazan y luego giran*/
-}
-
-input#hamburguer-icon:checked~span.hamburguer-line:nth-child(4) {
-    top: 1.75rem;
-    /*primero se desplaza hacia el centro*/
-    transform: rotate(-45deg);
-    /*después rota 45º*/
-    transition-delay: 0s, .25s;
-    /*primero se desplazan y luego giran*/
-}
-
-input#hamburguer-icon:checked~span.hamburguer-line:nth-child(3) {
-    background: none;
-    /*La línea central pierde el color de fondo*/
-}
-
-/* Estilo para ocultar la casilla de verificación */
-#toggle {
-    display: none;
-}
-
-/* Estilo para el menú desplegable */
-div#menu-desplegable ul {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo para mostrar el menú cuando la casilla está marcada */
-#toggle:checked ~ label > ul {
-    display: block;
-}
 
 
-div#contenido>div#menu-desplegable{
-    color: #085A8C;
+div#contenido>div#menu-desplegable {
+    color: white;
     font-weight: bold;
-    display: none;
-    padding: 1rem 1.5rem;
+    background-color: #085A8C;
+
 }
-div#contenido>div#menu-desplegable>ul{
+
+div#contenido>div#menu-desplegable>ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    align-items: center;
 }
 
+div#contenido>div#menu-desplegable>ul>li {
+    padding: 0.4rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.s;
+    width: 100%;
+    text-align: center;
+}
 
-
-div#contenido>main{
+div#contenido>main {
     display: flex;
     flex-direction: column;
     padding: 1.2rem 2rem;
 }
 
 
-div#contenido>main img{
+div#contenido>main img {
     width: 100%;
     height: auto;
 }
 
-div#contenido>main .titulo{
+div#contenido>main .titulo {
     text-align: center;
     padding: 1rem;
     color: #085A8C;
 }
 
-div#contenido>main .texto{
+div#contenido>main .texto {
     text-align: justify;
 }
 
-div#contenido>main>div#ventajas{
+div#contenido>main>div#descripcion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+div#contenido>main>div#ventajas {
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
 }
 
-div#contenido>main>div#ventajas>p{
+div#contenido>main>div#ventajas>p {
     padding: 0.5rem;
 }
 
-div#contenido>main>div#productos{
+div#contenido>main>div#productos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    padding: 1rem 0;
 }
 
-div#contenido>main>div#productos>div.item-producto{
+div#contenido>main>div#productos>div.item-producto {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-div#contenido>main>div#productos>div.item-producto>h3.tituloProducto{
+div#contenido>main>div#productos>div.item-producto>h3.tituloProducto {
     font-size: 17px;
     text-align: center;
     padding: 1rem 0;
 }
 
-div#contenido>main>div#productos>button#masproductos{
+div#contenido>main>div#productos>button#masproductos {
     margin-top: 1rem;
     text-align: center;
     padding: 1rem;
@@ -175,23 +118,78 @@ div#contenido>main>div#productos>button#masproductos{
     cursor: pointer;
 }
 
-div#contenido>main>div#nosotros{
+div#contenido>main>div#productos>button#masproductos:hover {
+    background-color: #6b0262;
+}
+
+div#contenido>main>div#nosotros {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     padding: 1rem 0rem;
 }
 
-div#contenido>main>div#nosotros>*{
+div#contenido>main>div#nosotros>* {
     padding: 1rem 0rem;
 }
 
-div#contenido>main>div#contacto{
-    display: flex;
-    flex-direction: column;
+div#contenido>main>div#nosotros>img {
+    height: 400px;
 }
 
-div#contenido>footer{
+div#contenido>main>div#contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+div#contenido>main>div#contacto>div#emailEscrito {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#contenido>main>div#contacto>div#emailEscrito>img {
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+div#contenido>main>div#contacto>form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0rem;
+}
+
+div#contenido>main>div#contacto>form>* {
+    padding: 0.5rem 0rem;
+}
+
+div#contenido>main>div#contacto>form>label {
+    font-weight: bold;
+}
+
+div#contenido>main>div#contacto>form>textarea {
+    padding: 2rem 0;
+}
+
+div#contenido>main>div#contacto>form>button {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: #A656A0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+div#contenido>main>div#contacto>form>button:hover {
+    background-color: #6b0262;
+}
+
+div#contenido>footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,12 +197,12 @@ div#contenido>footer{
     margin-bottom: 1rem;
 }
 
-div#contenido>footer>*{
+div#contenido>footer>* {
     padding: 0.5rem 0;
     font-weight: bold;
 }
 
-div#contenido>footer>p#firma>a{
+div#contenido>footer>p#firma>a {
     color: #085A8C;
     text-decoration: none;
 }

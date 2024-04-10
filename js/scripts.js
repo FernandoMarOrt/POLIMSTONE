@@ -1,22 +1,53 @@
-/*<header>
-            /<nav id="menu-principal">
-                <label id="clickmenu" for="hamburguer-icon">
-                    <input id="hamburguer-icon" type="checkbox">
-                    <span class="hamburguer-line"></span>
-                    <span class="hamburguer-line"></span>
-                    <span class="hamburguer-line"></span>
-                </label>
-            </nav>
-            <img src="./img/logo-polimstone.webp" alt="logo" width="100">
-        </header>
-        <div id="menu-desplegable">
-            <input type="checkbox" id="toggle">
-            <label for="toggle">
-                <ul>
-                    <li>INICIO</li>
-                    <li>NOSOTROS</li>
-                    <li>PRODUCTOS</li>
-                    <li>CONTACTO</li>
-                </ul>
-            </label>
-        </div>*/ 
+$(document).ready(function () {
+
+    //Animacion del menu version movil
+    let menuClick = "#menuclick";
+    let menuDesplegable = "#menu-desplegable";
+
+    $(menuClick).on({
+        click: function () {
+            $(menuDesplegable).slideToggle("slow");
+        }
+    })
+
+    $(menuDesplegable).hide();
+
+
+    //Funcion de clickado en menu version movil:
+    $("#menuInicio").on({
+        click: function () {
+            window.location.href = "./index.html";
+        }
+    })
+
+    $("#menuNosotros").on({
+        click: function () {
+            window.location.href = "./index.html#nosotros";
+        }
+    })
+
+    $("#menuProductos").on({
+        click: function () {
+            window.location.href = "./index.html";
+        }
+    })
+
+    $("#menuContactos").on({
+        click: function () {
+            window.location.href = "./index.html#contacto";
+        }
+    })
+
+
+
+    $('#menu-desplegable ul li').hover(
+        function() {
+            $(this).css('background-color', 'white'); // Cambiar el color de fondo
+            $(this).css('color', '#085A8C'); // Cambiar el color de la letra
+        },
+        function() {
+            $(this).css('background-color', ''); // Restaurar el color de fondo original
+            $(this).css('color', ''); // Restaurar el color de la letra original
+        }
+    );
+})
