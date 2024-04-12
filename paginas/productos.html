@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLIMSTONE</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery.animate-colors-min.js"></script>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <img src="../img/menu.svg" id="menuclick" alt="menu" width="40">
+            <img src="../img/logo-polimstone.webp" alt="logo" width="80">
+        </header>
+        <div id="menu-desplegable">
+            <ul>
+                <li id="menuInicio2">INICIO</li>
+                <li id="menuNosotros2">NOSOTROS</li>
+                <li id="menuProductos2">PRODUCTOS</li>
+                <li id="menuContactos2">CONTACTO</li>
+            </ul>
+        </div>
+
+        <main>
+            <div id="productos">
+                <h1 class="titulo">Productos</h1>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – Plano con goterones</h3>
+                    <img src="../img/cubremuro-plano-goterones-polimstone-hormigon-polimero.webp" alt="cubremuro-plano">
+                </div>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – 1 Vertiente con goterones</h3>
+                    <img src="../img/cubremuro-1-vertiente-goterones-polimstone-hormigon-polimero.webp"
+                        alt="cubremuro-vertiente">
+                </div>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – 2 Vertientes con goterones</h3>
+                    <img src="../img/cubremuro-2-vertientes-goterones-polimstone-hormigon-polimero.webp"
+                        alt="cubremuro-vertientes2">
+                </div>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – Bajante</h3>
+                    <img src="../img/cubremuro-bajante-polimstone-hormigon-polimero.webp" alt="cubremuro-bajante">
+                </div>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – 2 vertientes Bajante</h3>
+                    <img src="../img/cubremuro-2-vertientes-bajante-polimstone-hormigon-polimero.webp"
+                        alt="cubremuro-bajante2">
+                </div>
+                <div class="item-producto">
+                    <h3 class="tituloProducto">Cubremuro – Plano con goterones</h3>
+                    <img src="../img/vierteaguas-goteron-polimstone-hormigon-polimero.webp" alt="vierteaguas">
+                </div>
+            </div>
+
+            <div id="contacto">
+                <h2 class="titulo">Contacto</h2>
+                <form action="index.html" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre aqui">
+
+                    <label for="email">Correo:</label>
+                    <input type="email" name="email" id="email" required placeholder="Escribe tu correo aqui">
+
+                    <label for="telefono">Telefono:</label>
+                    <input type="text" name="telefono" id="telefono" required maxlength="9" placeholder="Escribe tu numero aqui">
+
+                    <label for="asunto">Asunto:</label>
+                    <textarea name="asunto" id="asunto" required placeholder="Escriba la duda o problema que tenga"></textarea>
+
+                    <button type="submit" name="btnEnviar">
+                        ENVIAR
+                    </button>
+                </form>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <img src="../img/logo-polimstone.webp" alt="logoFooter" width="100">
+            <p>
+                © PolimStone </p>
+            <p id="firma">
+                <a href="https://github.com/FernandoMarOrt">Design by <span class="amarillo">FerDev</span></a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

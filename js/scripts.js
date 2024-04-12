@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     $("#menuProductos").on({
         click: function () {
-            window.location.href = "./index.html";
+            window.location.href = "./paginas/productos.html";
         }
     })
 
@@ -37,6 +37,33 @@ $(document).ready(function () {
             window.location.href = "./index.html#contacto";
         }
     })
+
+    //Pagina productos
+
+    $("#menuInicio2").on({
+        click: function () {
+            window.location.href = "../index.html";
+        }
+    })
+
+    $("#menuNosotros2").on({
+        click: function () {
+            window.location.href = "../index.html#nosotros";
+        }
+    })
+
+    $("#menuProductos2").on({
+        click: function () {
+            window.location.href = "productos.html";
+        }
+    })
+
+    $("#menuContactos2").on({
+        click: function () {
+            window.location.href = "./index.html#contacto";
+        }
+    })
+
 
 
 
@@ -50,4 +77,16 @@ $(document).ready(function () {
             $(this).css('color', ''); // Restaurar el color de la letra original
         }
     );
+
+
+    let botonProductos = "#masproductos";
+
+    
+    $(botonProductos).on({
+        click: function () {
+            window.location.href = "./paginas/productos.html";
+        }
+    })
+
+
 })

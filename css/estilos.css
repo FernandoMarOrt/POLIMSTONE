@@ -15,6 +15,7 @@ div#contenido>header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    box-shadow: 0px 0px 5px grey
 }
 
 div#contenido>header>img#menuclick {
@@ -63,6 +64,7 @@ div#contenido>main .titulo {
     text-align: center;
     padding: 1rem;
     color: #085A8C;
+    font-weight: bold;
 }
 
 div#contenido>main .texto {
@@ -96,7 +98,25 @@ div#contenido>main>div#productos {
 div#contenido>main>div#productos>div.item-producto {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
+    align-items: center;
+}
+
+div#contenido>main>div#productos>div.item-producto>button.vermas {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: #085A8C;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #085A8C;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+div#contenido>main>div#productos>div.item-producto>button.vermas:hover {
+    color: white;
+    background-color: #085A8C;
 }
 
 div#contenido>main>div#productos>div.item-producto>h3.tituloProducto {
