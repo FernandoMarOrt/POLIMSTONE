@@ -156,6 +156,37 @@ div#contenido>main>div#nosotros>img {
     height: 400px;
 }
 
+div#contenido>main>div#nosotros>div#iconos{
+    display: flex;
+    flex-direction: column;
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.5rem 0rem;
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>img{
+    width: 100%;
+    height: auto;
+    width: 40px;
+} 
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#experiencia{
+    color: #6b0262;
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#profesionales{
+    color: #085A8C;
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#materiales{
+    color: #89A61F;
+}
+
 div#contenido>main>div#contacto {
     display: flex;
     flex-direction: column;
