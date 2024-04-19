@@ -15,14 +15,20 @@
     <div id="contenido">
         <header>
             <img src="./img/menu.svg" id="menuclick" alt="menu" width="40">
-            <img src="./img/logo-polimstone.webp" alt="logo" width="80">
+            <ul id="menuEscritorio">
+                <li class="menuInicio">INICIO</li>
+                <li class="menuNosotros">NOSOTROS</li>
+                <li class="menuProductos">PRODUCTOS</li>
+                <li class="menuContactos">CONTACTO</li>
+            </ul>
+            <img src="./img/logo-polimstone.webp" id="logo" alt="logo" width="80">
         </header>
         <div id="menu-desplegable">
             <ul>
-                <li id="menuInicio">INICIO</li>
-                <li id="menuNosotros">NOSOTROS</li>
-                <li id="menuProductos">PRODUCTOS</li>
-                <li id="menuContactos">CONTACTO</li>
+                <li class="menuInicio">INICIO</li>
+                <li class="menuNosotros">NOSOTROS</li>
+                <li class="menuProductos">PRODUCTOS</li>
+                <li class="menuContactos">CONTACTO</li>
             </ul>
         </div>
 
@@ -44,7 +50,6 @@
             </div>
             <div id="ventajas">
                 <h2 class="titulo">Ventajas</h2>
-                <p>Fácil de aplicar</p>
                 <p>Estético, muy útil para fines decorativos</p>
                 <p>Ideal para superficies donde necesitamos evitar bacterias</p>
                 <p>Posibilidad de cualquier color de la carta RAL</p>
@@ -65,13 +70,13 @@
                     <h3 class="tituloProducto">Cubremuro – 1 Vertiente con goterones</h3>
                     <img src="./img/cubremuro-1-vertiente-goterones-polimstone-hormigon-polimero.webp"
                         alt="cubremuro-vertiente">
-                        <button class="vermas">Ver más</button>
+                    <button class="vermas">Ver más</button>
                 </div>
                 <div class="item-producto">
                     <h3 class="tituloProducto">Cubremuro – 2 Vertientes con goterones</h3>
                     <img src="./img/cubremuro-2-vertientes-goterones-polimstone-hormigon-polimero.webp"
                         alt="cubremuro-vertientes2">
-                        <button class="vermas">Ver más</button>
+                    <button class="vermas">Ver más</button>
                 </div>
                 <div class="item-producto">
                     <h3 class="tituloProducto">Cubremuro – Bajante</h3>
@@ -82,41 +87,50 @@
                     <h3 class="tituloProducto">Cubremuro – 2 vertientes Bajante</h3>
                     <img src="./img/cubremuro-2-vertientes-bajante-polimstone-hormigon-polimero.webp"
                         alt="cubremuro-bajante2">
-                        <button class="vermas">Ver más</button>
+                    <button class="vermas">Ver más</button>
                 </div>
                 <div class="item-producto">
                     <h3 class="tituloProducto">Cubremuro – Plano con goterones</h3>
                     <img src="./img/vierteaguas-goteron-polimstone-hormigon-polimero.webp" alt="vierteaguas">
                     <button class="vermas">Ver más</button>
                 </div>
-                <button id="masproductos">VER MAS PRODUCTOS</button>
             </div>
 
             <div id="nosotros">
                 <h2 class="titulo">Sobre Nosotros</h2>
                 <img src="./img/polimstone-hormigon-polimero.webp" alt="cambiar">
-                <p class="texto">Bienvenidos a nuestra empresa, con más de <b>20 años de experiencia</b> en el seguimiento de
-                    obras. Somos un
-                    equipo de <b>profesionales altamente capacitados</b> en la gestión y supervisión de proyectos de
-                    construcción en diferentes sectores de la industria.
-                    <br><br>
-                    Nuestra empresa se dedica a brindar <b>soluciones de calidad</b> a nuestros clientes en todas las etapas
-                    del proceso constructivo, desde el diseño hasta la entrega final de la obra. <br><br>Con un enfoque
-                    en la
-                    <b>planificación, coordinación y control</b>, nuestro equipo garantiza que los proyectos se ejecuten en
-                    tiempo y forma, cumpliendo con los estándares más altos de calidad y seguridad.
-                </p>
-                <div id="iconos">
-                    <div class="iconosnosotros">
-                        <img src="./img/menu.svg" alt="check"><p id="experiencia">Experiencia y calidad</p>
-                    </div>
-                    <div class="iconosnosotros">
-                        <img src="./img/menu.svg" alt="profesionales"><p id="profesionales">Profesionales especializados</p>
-                    </div>
-                    <div class="iconosnosotros">
-                        <img src="./img/menu.svg" alt="materiales"><p id="materiales">Materiales de alta calidad</p>
+                <div id="nosotrosTexto">
+                    <p class="texto">Bienvenidos a nuestra empresa, con más de <b>20 años de experiencia</b> en el
+                        seguimiento de
+                        obras. Somos un
+                        equipo de <b>profesionales altamente capacitados</b> en la gestión y supervisión de proyectos de
+                        construcción en diferentes sectores de la industria.
+                        <br><br>
+                        Nuestra empresa se dedica a brindar <b>soluciones de calidad</b> a nuestros clientes en todas
+                        las etapas
+                        del proceso constructivo, desde el diseño hasta la entrega final de la obra. <br><br>Con un
+                        enfoque
+                        en la
+                        <b>planificación, coordinación y control</b>, nuestro equipo garantiza que los proyectos se
+                        ejecuten en
+                        tiempo y forma, cumpliendo con los estándares más altos de calidad y seguridad.
+                    </p>
+                    <div id="iconos">
+                        <div class="iconosnosotros">
+                            <img src="./img/menu.svg" alt="check">
+                            <p id="experiencia">Experiencia y calidad</p>
+                        </div>
+                        <div class="iconosnosotros">
+                            <img src="./img/menu.svg" alt="profesionales">
+                            <p id="profesionales">Profesionales especializados</p>
+                        </div>
+                        <div class="iconosnosotros">
+                            <img src="./img/menu.svg" alt="materiales">
+                            <p id="materiales">Materiales de alta calidad</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <div id="contacto">
                 <h2 class="titulo">Contacto</h2>
@@ -138,10 +152,12 @@
                     <input type="email" name="email" id="email" required placeholder="Escribe tu correo aqui">
 
                     <label for="telefono">Telefono:</label>
-                    <input type="text" name="telefono" id="telefono" required maxlength="9" placeholder="Escribe tu numero aqui">
+                    <input type="text" name="telefono" id="telefono" required maxlength="9"
+                        placeholder="Escribe tu numero aqui">
 
                     <label for="asunto">Asunto:</label>
-                    <textarea name="asunto" id="asunto" required placeholder="Escriba la duda o problema que tenga"></textarea>
+                    <textarea name="asunto" id="asunto" required
+                        placeholder="Escriba la duda o problema que tenga"></textarea>
 
                     <button type="submit" name="btnEnviar">
                         ENVIAR

@@ -14,25 +14,25 @@ $(document).ready(function () {
 
 
     //Funcion de clickado en menu version movil:
-    $("#menuInicio").on({
+    $(".menuInicio").on({
         click: function () {
             window.location.href = "./index.html";
         }
     })
 
-    $("#menuNosotros").on({
+    $(".menuNosotros").on({
         click: function () {
             window.location.href = "./index.html#nosotros";
         }
     })
 
-    $("#menuProductos").on({
+    $(".menuProductos").on({
         click: function () {
             window.location.href = "./paginas/productos.html";
         }
     })
 
-    $("#menuContactos").on({
+    $(".menuContactos").on({
         click: function () {
             window.location.href = "./index.html#contacto";
         }
@@ -40,27 +40,27 @@ $(document).ready(function () {
 
     //Pagina productos
 
-    $("#menuInicio2").on({
+    $(".menuInicio2").on({
         click: function () {
             window.location.href = "../index.html";
         }
     })
 
-    $("#menuNosotros2").on({
+    $(".menuNosotros2").on({
         click: function () {
             window.location.href = "../index.html#nosotros";
         }
     })
 
-    $("#menuProductos2").on({
+    $(".menuProductos2").on({
         click: function () {
             window.location.href = "productos.html";
         }
     })
 
-    $("#menuContactos2").on({
+    $(".menuContactos2").on({
         click: function () {
-            window.location.href = "./index.html#contacto";
+            window.location.href = "../index.html#contacto";
         }
     })
 
@@ -69,15 +69,22 @@ $(document).ready(function () {
 
     $('#menu-desplegable ul li').hover(
         function() {
-            $(this).css('background-color', 'white'); // Cambiar el color de fondo
-            $(this).css('color', '#085A8C'); // Cambiar el color de la letra
+            $(this).css('background-color', '#0684d3'); // Cambiar el color de fondo
         },
         function() {
             $(this).css('background-color', ''); // Restaurar el color de fondo original
-            $(this).css('color', ''); // Restaurar el color de la letra original
         }
     );
 
+    
+    $('#menuEscritorio li').hover(
+        function() {
+            $(this).css('color', '#0684d3'); // Cambiar el color de fondo
+        },
+        function() {
+            $(this).css('color', ''); // Restaurar el color de fondo original
+        }
+    );
 
     let botonProductos = "#masproductos";
 
