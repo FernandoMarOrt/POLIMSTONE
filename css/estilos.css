@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 div#contenido {
@@ -72,6 +73,7 @@ div#contenido>main .titulo {
 
 div#contenido>main .texto {
     text-align: justify;
+    text-align: center;
 }
 
 div#contenido>main>div#descripcion {
@@ -164,36 +166,85 @@ div#contenido>main>div#nosotros>div#nosotrosTexto{
     flex-direction: column;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos {
+div#contenido>main>div#nosotros>div#iconos {
     display: flex;
     flex-direction: column;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos>div.iconosnosotros {
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: bold;
     padding: 0.5rem 0rem;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos>div.iconosnosotros>img {
-    width: 100%;
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>img {
     height: auto;
-    width: 40px;
+    width: 10px;
+    flex: 0 100%;
+    border: 1px solid red;
+
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos>div.iconosnosotros>p#experiencia {
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p {
+
+    
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#experiencia {
     color: #6b0262;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos>div.iconosnosotros>p#profesionales {
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#profesionales {
     color: #085A8C;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos>div.iconosnosotros>p#materiales {
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#materiales {
     color: #89A61F;
 }
+
+
+
+
+
+
+
+
+
+
+div#contenido>main>div#donde-estamos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 100%;
+    
+}
+
+div#contenido>main>div#donde-estamos>div:nth-child(1) {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div#contenido>main>div#donde-estamos>div:nth-child(1)>h2 {
+    text-align: center;
+}
+
+div#contenido>main>div#donde-estamos>#frameLocalizacion {
+    width: 90%;
+   
+}
+
+
+
+
 
 div#contenido>main>div#contacto {
     display: flex;
@@ -286,9 +337,16 @@ VERDE2: #92A649
 
 }
 
+/*ESTILOS ESCRITORIO*/
 
 @media (min-width: 1024px) {
     /*Redimension ordenador*/
+
+    div#contenido>main .texto {
+        text-align: justify;
+        text-align: center;
+        font-size: 17px;
+    }
 
 
     div#contenido>main .titulo {
@@ -326,13 +384,13 @@ VERDE2: #92A649
     }
 
     div#contenido>header>img#logo {
-        width: 120px;
+        width: 100px;
     }
 
     div#contenido>main {
         align-self: center;
         max-width: 1500px;
-        border: 1px solid red;
+     
     }
 
     div#contenido>main>div#descripcion>h1 {
@@ -342,6 +400,7 @@ VERDE2: #92A649
     div#contenido>main>div#ventajas {
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 17px;
     }
 
     div#contenido>main>div#ventajas>h2 {
@@ -370,6 +429,7 @@ VERDE2: #92A649
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+           font-size: 17px;
     }
 
     div#contenido>main>div#nosotros>img {
