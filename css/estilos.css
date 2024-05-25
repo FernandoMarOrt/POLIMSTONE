@@ -161,7 +161,7 @@ div#contenido>main>div#nosotros>img {
     height: 400px;
 }
 
-div#contenido>main>div#nosotros>div#nosotrosTexto{
+div#contenido>main>div#nosotros>div#nosotrosTexto {
     display: flex;
     flex-direction: column;
 }
@@ -175,34 +175,43 @@ div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     font-weight: bold;
     padding: 0.5rem 0rem;
+    justify-content: center;
+    text-align: center;
 }
 
 div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>img {
     height: auto;
-    width: 10px;
+    width: 100px;
+}
+
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div {
     flex: 0 100%;
-    border: 1px solid red;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p {
-
-    
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#experiencia {
+    color: white;
+    background-color: #6b0262;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
 }
 
-div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#experiencia {
-    color: #6b0262;
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#profesionales {
+    color: white;
+    background-color: #085A8C;
+    padding: 1rem;
+    border-radius: 30px;
 }
 
-div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#profesionales {
-    color: #085A8C;
-}
-
-div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>p#materiales {
-    color: #89A61F;
+div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#materiales {
+    color: white;
+    background-color: #89A61F;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
 }
 
 
@@ -220,7 +229,7 @@ div#contenido>main>div#donde-estamos {
     align-items: center;
     padding-bottom: 2rem;
     width: 100%;
-    
+
 }
 
 div#contenido>main>div#donde-estamos>div:nth-child(1) {
@@ -239,7 +248,7 @@ div#contenido>main>div#donde-estamos>div:nth-child(1)>h2 {
 
 div#contenido>main>div#donde-estamos>#frameLocalizacion {
     width: 90%;
-   
+
 }
 
 
@@ -390,7 +399,7 @@ VERDE2: #92A649
     div#contenido>main {
         align-self: center;
         max-width: 1500px;
-     
+
     }
 
     div#contenido>main>div#descripcion>h1 {
@@ -420,39 +429,90 @@ VERDE2: #92A649
     }
 
     div#contenido>main>div#productos>div.item-producto {
-     flex: 0 30%;
+        flex: 0 30%;
     }
 
-    
+
 
     div#contenido>main>div#nosotros {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-           font-size: 17px;
+        font-size: 17px;
+        align-items: center;
+
     }
 
     div#contenido>main>div#nosotros>img {
         flex: 0 42%;
     }
 
-    div#contenido>main>div#nosotros>div#nosotrosTexto{
+    div#contenido>main>div#nosotros>div#nosotrosTexto {
         flex: 0 54%;
     }
 
-    div#contenido>main>div#nosotros>div#nosotrosTexto>div#iconos{
-       padding-top: 1rem;
+    div#contenido>main>div#nosotros>div#iconos {
+        flex: 0 100%;
+        padding-top: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
 
-    div#contenido>main>div#contacto{
+
+    /*ICNOS NOSOTROS*/
+
+
+
+    div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div {
+        flex: 0 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    div#contenido>main>div#contacto>p{
+
+    div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#experiencia {
+        color: white;
+        background-color: #6b0262;
+        padding: 1rem 2.5rem;
+        border-radius: 30px;
+    }
+
+    div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#profesionales {
+        color: white;
+        background-color: #085A8C;
+        padding: 1rem;
+        border-radius: 30px;
+    }
+
+    div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#materiales {
+        color: white;
+        background-color: #89A61F;
+        padding: 1rem 1.5rem;
+        border-radius: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#contenido>main>div#contacto {
+        align-items: center;
+    }
+
+    div#contenido>main>div#contacto>p {
         display: none;
     }
 
-    div#contenido>main>div#contacto>form{
+    div#contenido>main>div#contacto>form {
         padding-top: 1rem;
         width: 650px;
     }

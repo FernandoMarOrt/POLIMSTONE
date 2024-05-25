@@ -119,15 +119,22 @@
                 <div id="iconos">
                     <div class="iconosnosotros">
                         <img src="./img/check.svg" alt="check">
-                        <p id="experiencia">Experiencia y calidad</p>
+                        <div id="experienciadiv">
+                            <p id="experiencia">Experiencia y calidad</p>
+                        </div>
+
                     </div>
                     <div class="iconosnosotros">
                         <img src="./img/profesionales.svg" alt="profesionales">
-                        <p id="profesionales">Profesionales especializados</p>
+                        <div id="profesionalesdiv">
+                            <p id="profesionales">Profesionales especializados</p>
+                        </div>
                     </div>
                     <div class="iconosnosotros">
                         <img src="./img/materiales.svg" alt="materiales">
-                        <p id="materiales">Materiales de alta calidad</p>
+                        <div id="materialesdiv">
+                            <p id="materiales">Materiales de alta calidad</p>
+                        </div>
                     </div>
                 </div>
 
@@ -160,7 +167,7 @@
                     <p>info@polimstone.com</p>
                 </div>
 
-                <form action="index.html" method="post">
+                <form action="php/formulario.php" method="post" id="formularioContacto">
                     <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre aqui">
 
@@ -191,6 +198,24 @@
             </p>
         </footer>
     </div>
+    <script>
+   $(document).ready(function() {
+            $('#formularioContacto').submit(function(event) {
+                event.preventDefault(); // Evitar el envío del formulario por defecto
+                var form = $(this);
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: form.serialize(),
+                    success: function(data) {
+                        // Redirigir al formulario después de enviar con éxito
+                        window.location = '#contacto';
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>
