@@ -82,6 +82,15 @@ div#contenido>main>div#descripcion {
     padding-bottom: 0.5rem;
 }
 
+
+div#contenido>main>div#sliderPoli{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+
+
 div#contenido>main>div#ventajas {
     text-align: center;
     display: flex;

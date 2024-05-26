@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+
+    $("#lightSlider").lightSlider({
+        item:1,
+        loop:true,
+    }); 
+
+
     //Animacion del menu version movil
     let menuClick = "#menuclick";
     let menuDesplegable = "#menu-desplegable";
