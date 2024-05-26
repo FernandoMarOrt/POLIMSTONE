@@ -56,6 +56,7 @@ div#contenido>main {
     display: flex;
     flex-direction: column;
     padding: 1.2rem 2rem;
+    border: 1px solid red;
 }
 
 
@@ -78,12 +79,31 @@ div#contenido>main .texto {
 
 div#contenido>main>div#descripcion {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     padding-bottom: 0.5rem;
+    justify-content: space-evenly;
+}
+
+div#contenido>main>div#descripcion>h1 {
+    flex: 0 100%;
 }
 
 
-div#contenido>main>div#sliderPoli{
+div#contenido>main>div#descripcion>p {
+   order: 2;
+}
+
+div#contenido>main>div#descripcion>div{
+   
+    order:1;
+}
+
+
+
+
+div#contenido>main>div#sliderPoli {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
@@ -413,7 +433,20 @@ VERDE2: #92A649
 
     div#contenido>main>div#descripcion>h1 {
         padding-bottom: 2rem;
+        font-size: 30px;
     }
+
+    div#contenido>main>div#descripcion>p {
+        flex: 0 50%;
+        order:1;
+    }
+    
+    div#contenido>main>div#descripcion>div{
+        flex: 0 40%;
+        order:2;
+    
+    }
+    
 
     div#contenido>main>div#ventajas {
         flex-direction: row;
@@ -470,7 +503,7 @@ VERDE2: #92A649
 
     /*ICNOS NOSOTROS*/
 
-
+    
 
     div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div {
         flex: 0 100%;
