@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
-
-    $("#lightSlider").lightSlider({
+      $("#lightSlider").lightSlider({
         item:1,
         loop:true,
     }); 
@@ -93,14 +92,6 @@ $(document).ready(function () {
         }
     );
 
-    let botonProductos = "#masproductos";
-
-    
-    $(botonProductos).on({
-        click: function () {
-            window.location.href = "./paginas/productos.html";
-        }
-    })
 
 
 })

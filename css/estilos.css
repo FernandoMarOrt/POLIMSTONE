@@ -5,10 +5,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 div#contenido {
     display: flex;
     flex-direction: column;
 }
+
+
 
 div#contenido>header {
     display: flex;
@@ -56,7 +59,6 @@ div#contenido>main {
     display: flex;
     flex-direction: column;
     padding: 1.2rem 2rem;
-    border: 1px solid red;
 }
 
 
@@ -106,7 +108,6 @@ div#contenido>main>div#descripcion>div{
 div#contenido>main>div#sliderPoli {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 
@@ -225,21 +226,21 @@ div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div {
 div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#experiencia {
     color: white;
     background-color: #6b0262;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 2.5rem;
     border-radius: 30px;
 }
 
 div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#profesionales {
     color: white;
     background-color: #085A8C;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
 }
 
 div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div>p#materiales {
     color: white;
     background-color: #89A61F;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 30px;
 }
 
@@ -350,10 +351,79 @@ div#contenido>footer>* {
     font-weight: bold;
 }
 
+
 div#contenido>footer>p#firma>a {
     color: #085A8C;
     text-decoration: none;
 }
+
+
+
+/*ESTILOS PARA PRODUCTOS*/
+
+div#contenido>main>div#productoP{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div#contenido>main>div#productoP>h2#tituloProducto{
+    flex: 0 100%;
+    font-size: 20px;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: #085A8C;
+}
+
+div#contenido>main>div#productoP>div#productoPIMG{
+    flex: 0 100%;
+    padding-bottom: 4rem;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores{
+    display: flex;
+    flex-direction: column;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores>p#textoP{
+    text-align: justify;
+    font-size: 15px;
+    padding-bottom: 4rem;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores>div#coloresP{
+  display: flex;
+  flex-direction: column;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>h4{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #085A8C;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+
+div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores>div.contenedorIMG{
+    display: flex;
+    flex-direction: column;
+    flex: 0 43%;
+    padding: 1rem;
+}
+
+div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores>div.contenedorIMG>p{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
 
 
 /*COLORES:
@@ -379,6 +449,30 @@ VERDE2: #92A649
 
 @media (min-width: 1024px) {
     /*Redimension ordenador*/
+
+    div#contenido {
+        position: relative;
+    }
+    
+    div#contenido::before,
+    div#contenido::after {
+        content: '';
+        position: absolute;
+        top: 5%;
+        bottom: 5.1%;
+        width: 9%; /* Ancho del borde lateral */
+        background-image: url('../img/decoracion.svg');
+        background-repeat: repeat-y; /* Repetir solo verticalmente */
+    }
+
+    #contenido::before {
+        left: 0;
+    }
+    
+    #contenido::after {
+        right: 0;
+    }
+    
 
     div#contenido>main .texto {
         text-align: justify;
@@ -431,6 +525,10 @@ VERDE2: #92A649
 
     }
 
+    div#contenido>main>div#descripcion {
+       padding-top: 5rem;
+    }
+
     div#contenido>main>div#descripcion>h1 {
         padding-bottom: 2rem;
         font-size: 30px;
@@ -452,6 +550,7 @@ VERDE2: #92A649
         flex-direction: row;
         flex-wrap: wrap;
         font-size: 17px;
+        padding-top: 5rem;
     }
 
     div#contenido>main>div#ventajas>h2 {
@@ -468,6 +567,7 @@ VERDE2: #92A649
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        padding-top: 5rem;
     }
 
     div#contenido>main>div#productos>div.item-producto {
@@ -482,6 +582,7 @@ VERDE2: #92A649
         justify-content: space-between;
         font-size: 17px;
         align-items: center;
+        padding-top: 5rem;
 
     }
 
@@ -532,15 +633,6 @@ VERDE2: #92A649
         padding: 1rem 1.5rem;
         border-radius: 30px;
     }
-
-
-
-
-
-
-
-
-
 
 
 
