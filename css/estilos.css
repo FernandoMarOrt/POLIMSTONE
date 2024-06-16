@@ -12,7 +12,6 @@ div#contenido {
 }
 
 
-
 div#contenido>header {
     display: flex;
     flex-direction: row;
@@ -77,6 +76,68 @@ div#contenido>main .titulo {
 div#contenido>main .texto {
     text-align: justify;
     text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+
+
+div#contenido>main>div#principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+div#contenido>main>div#principal>div#principaldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera>button.botones {
+    flex: 0 45%;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: #085A8C;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    font-size: 15px;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera>button.botones:hover {
+    color: white;
+    background-color: #0c72b1;
+}
+
+
+div#contenido>main>div#principal>div#principaldiv>div#emailEscrito {
+    align-self: center;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#emailEscrito>img {
+    width: 30px;
+    margin-right: 0.5rem;
 }
 
 div#contenido>main>div#descripcion {
@@ -86,6 +147,9 @@ div#contenido>main>div#descripcion {
     align-items: center;
     padding-bottom: 0.5rem;
     justify-content: space-evenly;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
+    padding-bottom: 2rem;
+    
 }
 
 div#contenido>main>div#descripcion>h1 {
@@ -94,21 +158,14 @@ div#contenido>main>div#descripcion>h1 {
 
 
 div#contenido>main>div#descripcion>p {
-   order: 2;
+    order: 2;
 }
 
-div#contenido>main>div#descripcion>div{
-   
-    order:1;
+div#contenido>main>div#descripcion>div {
+
+    order: 1;
 }
 
-
-
-
-div#contenido>main>div#sliderPoli {
-    display: flex;
-    flex-direction: column;
-}
 
 
 
@@ -116,7 +173,8 @@ div#contenido>main>div#ventajas {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1rem 0rem 4rem 0;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
 }
 
 div#contenido>main>div#ventajas>p {
@@ -128,59 +186,69 @@ div#contenido>main>div#productos {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
 }
 
-div#contenido>main>div#productos>div.item-producto {
+
+
+div#contenido>main>div#productos>div.desplegableG{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    border: 2px solid #085A8C;
+    border-radius: 30px;
+    background-color: #085A8C;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+
+}
+
+div#contenido>main>div#productos>div.desplegableG>img{
+    width: 30px;
+    filter: invert(1);
+}
+
+div#contenido>main>div#productos>div.desplegado>p{
+    padding-top: 1rem;
+
+}
+
+
+
+div#contenido>main>div#productos div.item-producto {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     align-items: center;
 }
 
-div#contenido>main>div#productos>div.item-producto>button.vermas {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    color: #085A8C;
-    font-weight: bold;
-    background-color: white;
-    border: 1px solid #085A8C;
-    cursor: pointer;
-    border-radius: 30px;
-    font-size: 15px;
-}
 
-div#contenido>main>div#productos>div.item-producto>button.vermas:hover {
-    color: white;
-    background-color: #085A8C;
-}
 
-div#contenido>main>div#productos>div.item-producto>h3.tituloProducto {
+div#contenido>main>div#productos div.item-producto>h3.tituloProducto {
     font-size: 17px;
     text-align: center;
     padding: 1rem 0;
 }
 
-div#contenido>main>div#productos>button#masproductos {
-    margin-top: 1rem;
+div#contenido>main>div#productos div.item-producto>p {
+    padding-top: 1rem;
     text-align: center;
-    padding: 1rem;
-    background-color: #A656A0;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 30px;
-    font-size: 15px;
-    cursor: pointer;
 }
 
-div#contenido>main>div#productos>button#masproductos:hover {
-    background-color: #6b0262;
-}
+
+
+
+
 
 div#contenido>main>div#nosotros {
     display: flex;
     flex-direction: column;
     padding: 1rem 0rem;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
 }
 
 div#contenido>main>div#nosotros>* {
@@ -259,6 +327,7 @@ div#contenido>main>div#donde-estamos {
     align-items: center;
     padding-bottom: 2rem;
     width: 100%;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
 
 }
 
@@ -289,19 +358,10 @@ div#contenido>main>div#contacto {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
+    box-shadow: 0 -5px 5px -5px grey, 0 5px 5px -5px grey;
 }
 
-div#contenido>main>div#contacto>div#emailEscrito {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-div#contenido>main>div#contacto>div#emailEscrito>img {
-    width: 30px;
-    margin-right: 0.5rem;
-}
 
 div#contenido>main>div#contacto>form {
     display: flex;
@@ -361,78 +421,84 @@ div#contenido>footer>p#firma>a {
 
 /*ESTILOS PARA PRODUCTOS*/
 
-div#contenido>main>div#productoP{
+div#contenido>main>div#productoP {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-div#contenido>main>div#productoP>h2#tituloProducto{
+
+
+div#contenido>main>div#productoP>div#productoPIMG {
     flex: 0 100%;
-    font-size: 20px;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+div#contenido>main>div#productoP>div#productoPIMG>h2#tituloProducto {
+    flex: 0 100%;
+    font-size: 22px;
     padding-bottom: 4rem;
     text-align: center;
     color: #085A8C;
 }
 
-div#contenido>main>div#productoP>div#productoPIMG{
+div#contenido>main>div#productoP>div#productoPIMG>img {
     flex: 0 100%;
-    padding-bottom: 4rem;
-}
-
-div#contenido>main>div#productoP>div#divtextocolores{
+    padding-bottom: 2rem;
     display: flex;
-    flex-direction: column;
 }
 
-div#contenido>main>div#productoP>div#divtextocolores>p#textoP{
+div#contenido>main>div#productoP>div#productoPIMG>p#textoP {
     text-align: justify;
     font-size: 15px;
-    padding-bottom: 4rem;
+    flex: 0 100%;
+    padding-top: 2rem;
 }
 
-div#contenido>main>div#productoP>div#divtextocolores>div#coloresP{
-  display: flex;
-  flex-direction: column;
+
+
+
+
+
+
+
+div#contenido>main>div#productos>div#coloresP {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
 }
 
-div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>h4{
-    font-size: 20px;
+div#contenido>main>div#productos>div#coloresP>h2 {
+    font-size: 24px;
     text-align: center;
     padding-bottom: 2rem;
     color: #085A8C;
 }
 
-div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
+div#contenido>main>div#productos>div#coloresP>div#imgColores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 
-div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores>div.contenedorIMG{
+div#contenido>main>div#productos>div#coloresP>div#imgColores>div.contenedorIMG {
     display: flex;
     flex-direction: column;
-    flex: 0 43%;
+    flex: 0 27%;
     padding: 1rem;
 }
 
-div#contenido>main>div#productoP>div#divtextocolores>div#coloresP>div#imgColores>div.contenedorIMG>p{
+div#contenido>main>div#productos>div#coloresP>div#imgColores>div.contenedorIMG>p {
     text-align: center;
     padding-bottom: 1rem;
     font-weight: bold;
 }
 
-
-
-/*COLORES:
-
-MORADO: #A656A0
-AZUL: #085A8C
-VERDE1: #89A61F
-VERDE2: #92A649
-*/
 
 @media (min-width: 720px) {
     /*Redimension tablet*/
@@ -453,26 +519,28 @@ VERDE2: #92A649
     div#contenido {
         position: relative;
     }
-    
+
     div#contenido::before,
     div#contenido::after {
         content: '';
         position: absolute;
         top: 5%;
-        bottom: 5.1%;
-        width: 9%; /* Ancho del borde lateral */
+        bottom: 5.5%;
+        width: 12%;
+        /* Ancho del borde lateral */
         background-image: url('../img/decoracion.svg');
-        background-repeat: repeat-y; /* Repetir solo verticalmente */
+        background-repeat: repeat-y;
+        /* Repetir solo verticalmente */
     }
 
     #contenido::before {
         left: 0;
     }
-    
+
     #contenido::after {
         right: 0;
     }
-    
+
 
     div#contenido>main .texto {
         text-align: justify;
@@ -526,7 +594,7 @@ VERDE2: #92A649
     }
 
     div#contenido>main>div#descripcion {
-       padding-top: 5rem;
+        padding-top: 5rem;
     }
 
     div#contenido>main>div#descripcion>h1 {
@@ -536,15 +604,91 @@ VERDE2: #92A649
 
     div#contenido>main>div#descripcion>p {
         flex: 0 50%;
-        order:1;
+        order: 1;
     }
-    
-    div#contenido>main>div#descripcion>div{
+
+    div#contenido>main>div#descripcion>div {
         flex: 0 40%;
-        order:2;
-    
+        order: 2;
+
     }
-    
+
+
+    div#contenido>main>div#principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+div#contenido>main>div#principal>div#principaldiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 45%;
+    padding-top: 1rem;
+}
+
+div#contenido>main>div#principal>div#principaldiv>h1 {
+    text-align: left;
+}
+
+div#contenido>main>div#principal>div#principaldiv>p {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+div#contenido>main>div#principal>img {
+    flex: 0 45%;
+}
+
+
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0rem;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera>button.botones {
+    flex: 0 0%;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    font-weight: bold;
+    background-color: #085A8C;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0;
+    font-size: 15px;
+}
+
+
+
+div#contenido>main>div#principal>div#principaldiv>div#botonera>button.botones:hover {
+    color: white;
+    background-color: #0c72b1;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#emailEscrito {
+    padding-left: 0.2rem;
+    align-self: flex-start;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+div#contenido>main>div#principal>div#principaldiv>div#emailEscrito>img {
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
 
     div#contenido>main>div#ventajas {
         flex-direction: row;
@@ -562,17 +706,142 @@ VERDE2: #92A649
     }
 
 
+
+
+
     div#contenido>main>div#productos {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        padding-top: 5rem;
+        padding: 1rem 0;
+    }
+    
+    
+    
+    div#contenido>main>div#productos>div.desplegableG{
+        display: flex;
+        width: 30%;
+        flex-direction: row;
+        padding: 0.5rem 0.5rem 0.5rem 2rem;
+        border: 2px solid #085A8C;
+        border-radius: 30px;
+        background-color: #085A8C;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 1.5rem;
+    
     }
 
-    div#contenido>main>div#productos>div.item-producto {
-        flex: 0 30%;
+
+    
+    div#contenido>main>div#productos>div.desplegableG>img{
+        width: 30px;
+        filter: invert(1);
     }
+
+
+    div#contenido>main>div#productos>div.desplegado{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    div#contenido>main>div#productos>div.desplegado>p{
+        padding-top: 1rem;
+        font-size: 20px;
+        flex: 0 80%;
+    
+    }
+    
+    
+    
+    div#contenido>main>div#productos div.item-producto {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+    }
+    
+    
+    
+    div#contenido>main>div#productos div.item-producto>h3.tituloProducto {
+        font-size: 17px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    div#contenido>main>div#productos div.item-producto>p {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#contenido>main>div#productos>div#coloresP {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    
+    div#contenido>main>div#productos>div#coloresP>h2 {
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 2rem;
+        color: #085A8C;
+    }
+
+    div#contenido>main>div#productos>div#coloresP>p {
+       font-size: 20px;
+       padding-bottom: 0.5rem;
+    }
+    
+    div#contenido>main>div#productos>div#coloresP>div#imgColores {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    
+    div#contenido>main>div#productos>div#coloresP>div#imgColores>div.contenedorIMG {
+        display: flex;
+        flex-direction: column;
+        flex: 0 15%;
+        padding: 1rem;
+    }
+    
+    div#contenido>main>div#productos>div#coloresP>div#imgColores>div.contenedorIMG>p {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -604,7 +873,7 @@ VERDE2: #92A649
 
     /*ICNOS NOSOTROS*/
 
-    
+
 
     div#contenido>main>div#nosotros>div#iconos>div.iconosnosotros>div {
         flex: 0 100%;
@@ -635,21 +904,31 @@ VERDE2: #92A649
     }
 
 
-
-
-
     div#contenido>main>div#contacto {
         align-items: center;
+        justify-content: center;
     }
 
     div#contenido>main>div#contacto>p {
-        display: none;
+        font-size: 18px;
+        width: 50%;
+       
     }
 
     div#contenido>main>div#contacto>form {
         padding-top: 1rem;
         width: 650px;
     }
+
+
+
+
+
+
+
+
+
+
 
 
 }
