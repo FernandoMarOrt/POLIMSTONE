@@ -639,10 +639,9 @@ div#contenido>main>div#principal>div#principaldiv>p {
     padding-left: 1rem;
 }
 
-div#contenido>main>div#principal>img {
+div#contenido>main>div#principal>div#imgPoli {
     flex: 0 45%;
 }
-
 
 
 div#contenido>main>div#principal>div#principaldiv>div#botonera {
@@ -763,6 +762,7 @@ div#contenido>main>div#principal>div#principaldiv>div#emailEscrito>img {
         flex-direction: column;
         padding: 2rem;
         align-items: center;
+        flex: 0 40%;
     }
     
     
